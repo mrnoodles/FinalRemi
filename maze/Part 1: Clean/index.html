@@ -1,0 +1,41 @@
+<html>
+
+<head>
+<title>Maze project</title>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+<!-- <script type="text/javascript" src="js/three.js"></script> -->
+<script type="text/javascript" src="../js/three.js"></script>
+
+<script type="text/javascript" src="../js/loaders/DDSLoader.js"></script>
+<script type="text/javascript" src="../js/loaders/MTLLoader.js"></script>
+<script type="text/javascript" src="../js/loaders/OBJMTLLoader.js"></script>
+<script type="text/javascript" src="../js/loaders/OBJLoader.js"></script>
+		
+<script type="text/javascript" src="../js/libs/dat.gui.min.js"></script>
+
+<script type="text/javascript" src="../js/maze-utils.js"></script>
+<script type="text/javascript" src="3d-helpers.js"></script>
+<script type="text/javascript" src="input.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+
+<style>
+    canvas {border: solid 1px black;}
+</style>
+
+</head>
+
+
+<body onload="webGLStart();">
+
+    <canvas id="canvas" width="800" height="800"></canvas>
+    <br/>
+    <div id="messagebox">---</div>
+    <div>Memo:<br>cameras[0] controls: IJKL for elevation/azimuth, UO for distance to target
+    <br>Hero/cameras[1] controls: arrow keys
+    <br>cameras[2] controls: none
+    <br>Switch between cameras using 'V'</div>
+</body>
+
+</html>
